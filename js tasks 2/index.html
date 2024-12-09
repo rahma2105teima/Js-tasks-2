@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Info Validation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>User Info Validation</h1>
+  <form id="userForm">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" required><br><br>
+
+    <label for="phone">Phone Number (8 digits):</label><br>
+    <input type="text" id="phone" required><br><br>
+
+    <label for="mobile">Mobile Number (11 digits, starts with 010/011/012):</label><br>
+    <input type="text" id="mobile" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" required><br><br>
+
+    <label for="color">Choose Message Color:</label><br>
+    <select id="color">
+      <option value="red">Red</option>
+      <option value="green">Green</option>
+      <option value="blue">Blue</option>
+    </select><br><br>
+
+    <button type="button" onclick="validateAndDisplay()">Submit</button>
+  </form>
+
+  <h2 id="output"></h2>
+
+
+  <h1>Find the Largest Word</h1>
+  <form id="wordForm">
+    <label for="sentence">Enter a Sentence:</label><br>
+    <input type="text" id="sentence" required><br><br>
+    <button type="button" onclick="findAndDisplayLargestWord()">Find Largest Word</button>
+  </form>
+
+  <h2 id="largestWordOutput"></h2>
+
+  <h1>Array Sorting</h1>
+  <form id="arrayForm">
+    <label for="numbers">Enter 5 numbers separated by commas:</label><br>
+    <input type="text" id="numbers" placeholder="e.g., 10, 20, 5, 30, 15" required><br><br>
+    <button type="button" onclick="sortArray()">Sort Numbers</button>
+  </form>
+
+  <h2>Results</h2>
+  <p><strong>Original Array:</strong> <span id="originalArray"></span></p>
+  <p><strong>Ascending Order:</strong> <span id="ascendingOrder"></span></p>
+  <p><strong>Descending Order:</strong> <span id="descendingOrder"></span></p>
+
+  <h1>Circle Area Calculator</h1>
+  <form id="circleForm">
+    <label for="radius">Enter the radius of the circle:</label><br>
+    <input type="number" id="radius" placeholder="Enter radius" required><br><br>
+    <button type="button" onclick="calculateArea()">Calculate Area</button>
+  </form>
+
+  <h2>Calculate Square Root</h2>
+  <form id="squareRootForm">
+    <label for="number">Enter a number:</label><br>
+    <input type="number" id="number" placeholder="Enter a number" required><br><br>
+    <button type="button" onclick="calculateSquareRoot()">Calculate Square Root</button>
+  </form>
+
+  <h2>Calculate Cosine of an Angle</h2>
+  <form id="cosineForm">
+    <label for="angle">Enter an angle in degrees:</label><br>
+    <input type="number" id="angle" placeholder="Enter angle" required><br><br>
+    <button type="button" onclick="calculateCosine()">Calculate Cosine</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
